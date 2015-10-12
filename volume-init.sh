@@ -11,6 +11,7 @@ fi
 echo "Linking wp-content.."
 rm -rf /app/wp-content
 ln -sf /data/wp-content /app/wp-content
+cp /app/wp-config.php /data/wp-config.original
 
 # Grab custom config file if it's there
 if [ -f /data/wp-config-production.php ]; then
