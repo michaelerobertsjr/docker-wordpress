@@ -13,9 +13,7 @@ define( 'DB_COLLATE', ''     );
 
 define('FS_METHOD', 'direct');
 
-#define('WP_HOME','http://usblog.triumph.com');
-#define('WP_SITEURL','http://usblog.triumph.com');
-
+define('WP_ALLOW_MULTISITE', true);
 
 $table_prefix  = 'wp_';
 
@@ -25,3 +23,4 @@ if ( !defined('ABSPATH') )
   define('ABSPATH', dirname(__FILE__) . '/');
 
 require_once(ABSPATH . 'wp-settings.php');
+
